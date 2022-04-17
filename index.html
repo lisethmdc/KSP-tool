@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Hohmann transfer</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hohman transfer orbit Δv</h1>
+      <p>for Kerbal Space Program</p>
+    </div>
+    <div class="main">
+      <form class="form">
+          <h3>Parameters</h3>
+        <div>
+          <label for="planets">Choose a planet:</label>
+          <select id="body">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+          </select>
+        </div>
+        <div>
+          <label for="initial-orbit-radius">Initial orbit radius:</label>
+          <input
+            type="text"
+            id="initial-orbit-radius"
+            name="initial-orbit-radius"
+            placeholder="m"
+          />
+        </div>
+        <div>
+          <label for="final-orbit-radius">Final orbit radius:</label>
+          <input
+            type="text"
+            id="final-orbit-radius"
+            name="final-orbit-radius"
+            placeholder="m"
+          />
+        </div>
+        <button type="button" id="submit" onclick="init()">Calculate</button>
+      </form>
+      <div class="schematic">
+        
+          <!-- <svg width="400" height="400" style="border: 1px solid gray" class="chart"> -->
+              <!-- <circle cx="50%" cy="50%" r="150" fill="none" stroke="#999" stroke-dasharray="10.10"></circle>
+              <circle cx="50%" cy="50%" r="131" fill="none" stroke="blue" stroke-dasharray="5.5"></circle>
+              <circle cx="50%" cy="50%" r="126" fill="blue" stroke="black" stroke-width="2"></circle> -->
+          
+
+      </div>
+      
+    </div>
+  </body>
+</html>

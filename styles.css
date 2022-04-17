@@ -1,0 +1,49 @@
+* {
+    font-family: 'Source Code Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+.main {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    
+}
+
+.form {
+    width: 275px;
+}
+
+.form div {
+    margin: 10px 5px;
+}
+
+input {
+    width: 50px;
+}
+
+select,
+input {
+    float: right;
+}
+
+button {
+    
+    margin: 5px;
+    padding: 5px;
+}
+
+.schematic {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
